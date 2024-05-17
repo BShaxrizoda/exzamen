@@ -1,27 +1,42 @@
 .banner {
-    margin: 80px 0;
-    height: 716px;
-    background-image: url(../../../images/banner/banner-image.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    @include flex (end, center);
-    margin-left: 250px;
 
+  padding-top : 80px;
 
+  &-image {
+    position: relative;
+  }
 
-    &-title {
-        font-family: var(--font-family);
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 125%;
-        color: #fff;
-    }
+  &-row {
+    @include flex(center, start);
+  }
 
-    &-subtitle {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 25px;
-        color: #fff;
-    }
+  &-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 125%;
+    color: #fff;
+    position: absolute;
+    color: #fff;
+    top: 562px;
+    left: 80px;
+  }
 
+  &-subtitle {
+    position: absolute;
+    top: 752px;
+    left: 80px;
+    font-family: "SF Pro Text", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  &-button {
+    column-gap  : 25px;
+    position: absolute;
+    top: 752px;
+    left: 498px;
+    width: 64px;
+    height: 64px;
+  }
 }

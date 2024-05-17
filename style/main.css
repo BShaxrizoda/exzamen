@@ -57,6 +57,36 @@ li {
   padding: 0 20px;
 }
 
+.section {
+  padding-top: 80px;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 39px;
+  color: #000;
+}
+.section-title__orange {
+  color: #ff8541;
+}
+.section-title__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title__button {
+  border: 1px solid #555351;
+  border-radius: 8px;
+  padding: 18px 36px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1c1917;
+  transition: all ease;
+}
+.section-title__button:hover {
+  border-color: #ff8541;
+}
+
 .header {
   margin-bottom: 24px;
   padding: 10px 0;
@@ -80,7 +110,7 @@ li {
   color: #1c1917;
 }
 .header-link__text {
-  padding: 48px;
+  margin: 40px;
 }
 .header-nav__button {
   font-weight: 600;
@@ -131,26 +161,46 @@ li {
 }
 
 .banner {
-  margin: 80px 0;
-  height: 716px;
-  background-image: url(../../../images/banner/banner-image.png);
-  background-repeat: no-repeat;
-  background-size: auto;
+  padding-top: 80px;
+}
+.banner-image {
+  position: relative;
+}
+.banner-row {
   display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-left: 250px;
+  align-items: center;
+  justify-content: start;
 }
 .banner-title {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 64px;
   line-height: 125%;
   color: #fff;
+  position: absolute;
+  color: #fff;
+  top: 562px;
+  left: 80px;
 }
 .banner-subtitle {
-  font-family: var(--font-family);
+  position: absolute;
+  top: 752px;
+  left: 80px;
+  font-family: "SF Pro Text", sans-serif;
   font-weight: 400;
   font-size: 25px;
   color: #fff;
+}
+.banner-button {
+  column-gap: 25px;
+  position: absolute;
+  top: 752px;
+  left: 498px;
+  width: 64px;
+  height: 64px;
+}
+
+.programs-row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
